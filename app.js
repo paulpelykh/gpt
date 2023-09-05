@@ -15,18 +15,10 @@ app.post('/api/questions', (req, res) => {
           option2: 'Ruby',
           option3: 'Python',
         },
-        {
-          question:
-            'Which library in Node.js is used for building web servers?',
-          answer: 'Express',
-          option1: 'Vue',
-          option2: 'Angular',
-          option3: 'React',
-        },
       ],
     };
     res.json(questionsResponse);
-  }, 20000); // Respond after 20 seconds
+  }, 5000); // Respond after 5 seconds
 });
 
 app.listen(port, () => {
